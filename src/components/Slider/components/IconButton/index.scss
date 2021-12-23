@@ -1,0 +1,21 @@
+.btn {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow .2s ease-in, background .2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+  }
+  &:hover {
+    background: #fff;
+    box-shadow: 2px 3px 12px 4px rgba(34, 60, 80, 0.2);
+  }
+}

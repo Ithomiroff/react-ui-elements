@@ -1,0 +1,43 @@
+.slider {
+  position: relative;
+  width: 100%;
+  outline: none;
+  &-inner {
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 10px;
+    transition: transform .3s ease-in;
+    &__item {
+      width: 120px;
+      height: 80px;
+      list-style: none;
+      border-radius: 16px;
+      padding: 10px;
+      cursor: pointer;
+      transition: transform .4s ease-in-out;
+      user-select: none;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+  &__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &_next {
+      right: -30px;
+    }
+    &_prev {
+      left: -30px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
